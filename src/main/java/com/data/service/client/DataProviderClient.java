@@ -19,7 +19,10 @@ public class DataProviderClient {
     private static Socket socket;
 
     public static DataProviderClient start() {
-        return new DataProviderClient();
+        if (instance == null) {
+            return new DataProviderClient();
+        }
+        return instance;
     }
 
     public static void stop() throws IOException {

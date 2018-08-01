@@ -1,4 +1,4 @@
-package com.excercise.server;
+package com.data.service.server;
 
 public class ApplicationBootStrap {
 
